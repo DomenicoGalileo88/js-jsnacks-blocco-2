@@ -1,29 +1,23 @@
-/* SNACK 1 
-Il software deve chiedere per 5 volte all’utente di inserire un numero.
-Il programma stampa la somma di tutti i numeri inseriti.
-Esegui questo programma in due versioni, con il for e con il while. */
+/* 
+Snack3
 
-let somma = 0;
+Generatore di “nomi cognomi” casuali: il Grande Gatsby ha una lista di nomi e una lista di cognomi, e da queste vuole generare una falsa lista di invitati con nome e cognome.
+*/
 
-for (let i = 0; i < 5; i++) {
-   
-    let numero = parseInt(prompt('Inserisci un numero'));
-    somma += numero;    
-}
-console.log(somma);
 
-console.log('Con for');
+// Il Grande Gatsby ha una lista di nomi e una lista di cognomi
 
-/* let i = 0;
+let nameList = ['Domenico', 'Alessio', 'Luigi', 'Gabriella', 'Francesca', 'Veronica'];
 
-while (i < 5) {
+let lastNameList = ['Galileo', 'Rossi', 'Esposito', 'Gaudino', 'Capasso', 'Cantile'];
 
-    let numero = parseInt(prompt('Inserisci un numero'));
-    somma += numero;  
+// Da queste vuole generare una falsa lista di invitati con nome e cognome.
 
-    i++
-}
+for (i = 0; i < nameList.length; i++){
 
-console.log(somma); 
-console.log('Con while'); */
+    let randomName = Math.floor(Math.random() * nameList.length);
+    let randomLastName = Math.floor(Math.random() * lastNameList.length);
+    let falseList = `${nameList[randomName]}  ${lastNameList[randomLastName]}`;
 
+    console.log(falseList);
+};
