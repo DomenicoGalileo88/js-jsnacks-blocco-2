@@ -17,7 +17,7 @@ while (short < longArray.length){
 
     shortArray.push('Alessandro');
 
-    shortArray++;
+    short++;
 }
 
 console.log(shortArray);
