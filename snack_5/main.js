@@ -1,29 +1,23 @@
-/* SNACK 1 
-Il software deve chiedere per 5 volte all’utente di inserire un numero.
-Il programma stampa la somma di tutti i numeri inseriti.
-Esegui questo programma in due versioni, con il for e con il while. */
+/* 
+Snack5 (Bonus)
 
-let somma = 0;
+Crea due array che hanno un numero di elementi diversi. Aggiungi elementi all’array che ha meno elementi fino a quando ne avrà tanti quanti l’altro.
+*/
 
-for (let i = 0; i < 5; i++) {
-   
-    let numero = parseInt(prompt('Inserisci un numero'));
-    somma += numero;    
-}
-console.log(somma);
+// Crea due array che hanno un numero di elementi diversi.
 
-console.log('Con for');
+let longArray = ['Domenico', 'Luca', 'Luigi', 'Federica', 'Luisa', 'Antonella'];
 
-/* let i = 0;
+let shortArray = ['Marco', 'Antonio', 'Alice', 'Martina'];
 
-while (i < 5) {
+// Aggiungi elementi all’array che ha meno elementi fino a quando ne avrà tanti quanti l’altro.
+let short = shortArray.length;
 
-    let numero = parseInt(prompt('Inserisci un numero'));
-    somma += numero;  
+while (short < longArray.length){
 
-    i++
+    shortArray.push('Alessandro');
+
+    shortArray++;
 }
 
-console.log(somma); 
-console.log('Con while'); */
-
+console.log(shortArray);
