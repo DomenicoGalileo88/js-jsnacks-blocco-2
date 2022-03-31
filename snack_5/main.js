@@ -21,13 +21,13 @@ if (arrayUno.length > arrayDue.length) {
     long = arrayDue;
     short = arrayUno;
 }
-
+console.log(short);
+console.log(long);
 
 while (short.length < long.length){
 
     short.push('Alessandro');
     
-    short++;
 }
 
 console.log(short);
