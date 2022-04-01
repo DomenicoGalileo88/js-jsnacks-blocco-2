@@ -37,7 +37,6 @@ console.log(long);
 while (short.length < long.length){
 
     short.push('Alessandro');
-    
 }
 
 // stampo l'array corto per verificare l'inserimento dei valori
